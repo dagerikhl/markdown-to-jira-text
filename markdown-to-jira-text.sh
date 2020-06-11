@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 
-source=$1
+source="$1"
 
-sed -r 's/^# /h1. /g' $source |
+sed -r 's/^# /h1. /g' "$source" |
 sed -r 's/^## /h2. /g' |
 sed -r 's/^### /h3. /g' |
 sed -r 's/^#### /h4. /g' |
